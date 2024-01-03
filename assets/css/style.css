@@ -1875,3 +1875,9 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+@media screen and (max-width: 768px) {
+  .social-link {
+    font-size: 14px;
+  }
+}
