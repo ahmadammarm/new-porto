@@ -423,7 +423,7 @@ main {
 
 .social-item .social-link {
   color: var(--light-gray-70);
-  font-size: 15px;
+  font-size: 18px;
 }
 
 
@@ -1567,6 +1567,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
+
   /**
    * NAVBAR
    */
@@ -1634,6 +1635,12 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-left: auto;
   }
   
+}
+
+@media (max-width: 768px) {
+  .social-item .social-link {
+    font-size: 14px;
+  }
 }
 
 
