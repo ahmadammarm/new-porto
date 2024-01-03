@@ -417,13 +417,13 @@ main {
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
-  padding-bottom: 20px;
+  padding-bottom: 3rem;
   padding-left: 7px;
 }
 
 .social-item .social-link {
   color: var(--light-gray-70);
-  font-size: 16px;
+  font-size: 17px;
 }
 
 
