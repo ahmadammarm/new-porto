@@ -1876,8 +1876,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 }
 
-@media screen and (max-width: 768px) {
-  .social-link {
+@media (max-width: 1250px) {
+  .social-links {
     font-size: 14px;
   }
 }
