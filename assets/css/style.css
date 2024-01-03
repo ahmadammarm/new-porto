@@ -766,7 +766,10 @@ main {
   margin-left: 45px;
 }
 
-.timeline-item { position: relative; }
+.timeline-item { 
+  position: relative;
+  padding-bottom: 25px; 
+}
 
 .timeline-item:not(:last-child) { margin-bottom: 20px; }
 
