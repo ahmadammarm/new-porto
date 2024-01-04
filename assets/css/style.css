@@ -1333,9 +1333,17 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { gap: 25px; }
 
-  .avatar-box { border-radius: 30px; }
+  .avatar-box { border-radius: 30px; overflow: hidden; }
 
-  .avatar-box img { width: 120px; }
+  .avatar-box img {
+    width: 100%; /* Agar gambar sesuai dengan lebar kotak */
+    height: auto; /* Untuk menjaga aspek rasio gambar */
+    transition: transform 0.3s ease; /* Efek transisi saat hover */
+  }
+  
+  .avatar-box:hover img {
+    transform: scale(1.3); /* Efek zoom saat hover */
+  }
 
   .info-content .name { margin-bottom: 15px; }
 
@@ -1424,6 +1432,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .testimonials-avatar-box img { width: 80px; }
+
 
   .testimonials-item-title {
     margin-bottom: 10px;
