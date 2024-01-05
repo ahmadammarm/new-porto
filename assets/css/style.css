@@ -342,13 +342,16 @@ main {
   top: -15px;
   right: -15px;
   border-radius: 0 15px;
-  font-size: 13px;
+  font-size: 8px;
   color: var(--orange-yellow-crayola);
   background: var(--border-gradient-onyx);
   padding: 10px;
   box-shadow: var(--shadow-2);
   transition: var(--transition-1);
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .info_more-btn::before {
@@ -361,13 +364,19 @@ main {
   z-index: -1;
 }
 
+.info_more-btn ion-icon {
+  font-size: 16px;
+  transition: var(--transition-1);
+}
+
 .info_more-btn:hover,
 .info_more-btn:focus { background: var(--bg-gradient-yellow-1); }
 
 .info_more-btn:hover::before,
 .info_more-btn:focus::before { background: var(--bg-gradient-yellow-2); }
 
-.info_more-btn span { display: none; }
+
+/* .info_more-btn span { display: none; } */
 
 .sidebar-info_more {
   opacity: 0;
