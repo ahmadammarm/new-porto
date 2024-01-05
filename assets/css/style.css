@@ -342,7 +342,7 @@ main {
   top: -15px;
   right: -15px;
   border-radius: 0 15px;
-  font-size: 8px;
+  font-size: 6px;
   color: var(--orange-yellow-crayola);
   background: var(--border-gradient-onyx);
   padding: 8px;
