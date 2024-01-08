@@ -3,9 +3,14 @@
 
 
 // element toggle function
-const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
+// const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
+// const toggle = document.querySelector('#toggle');
+// const html = document.querySelector('html');
 
+// toggle.addEventListener('click', function() {
+//   toggle.checked ? html.classList.add('light') : html.classList.remove('light');
+// })
 
 // sidebar variables
 const sidebar = document.querySelector("[data-sidebar]");

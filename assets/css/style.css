@@ -103,6 +103,10 @@
   box-sizing: border-box;
 }
 
+* {
+  font-family: var(--ff-poppins);
+}
+
 a { text-decoration: none; }
 
 li { list-style: none; }
@@ -137,6 +141,10 @@ body { background: var(--smoky-black); }
 
 
 
+#toggle:checked ~ label div.toggle-circle {
+  transform: translateX(1rem);
+  background-color: gray;
+}
 
 
 /*-----------------------------------*\
