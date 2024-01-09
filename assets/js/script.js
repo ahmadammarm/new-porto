@@ -21,6 +21,12 @@ $(document).ready(function(){
     }
   });
 
+  // Tampilkan skill list untuk kategori "Language" secara default
+  $('.language-skills').show();
+
+  // Ubah warna judul kategori "Language" menjadi hsl(45, 100%, 72%)
+  $('.skill-category-title.language h4').css('color', 'hsl(45, 100%, 72%)');
+
   // Tambahkan event click pada setiap judul skill
   $('.skills-item .title-wrapper').click(function(){
     // Ambil teks dari judul skill yang diklik
@@ -43,6 +49,7 @@ function changeColor(clickedElement) {
     }
   });
 }
+
 
 
 
