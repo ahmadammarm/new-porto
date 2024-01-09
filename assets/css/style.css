@@ -869,6 +869,7 @@ main {
  .skills-list {
   display: none;
   list-style: none;
+  transition: all 0.3s ease;
 }
 
 .skill-category-title.active {
