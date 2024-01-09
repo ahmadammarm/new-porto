@@ -112,7 +112,17 @@ const selectItems = document.querySelectorAll("[data-select-item]");
 const selectValue = document.querySelector("[data-selecct-value]");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
-select.addEventListener("click", function () { elementToggleFunc(this); });
+
+function elementToggleFunc(element) {
+  // Lakukan operasi toggle pada elemen yang diberikan (misalnya, tampilkan atau sembunyikan)
+  element.classList.toggle('active');
+}
+
+// Menggunakan event listener pada button dengan id "select"
+select.addEventListener('click', function() {
+  // Panggil fungsi elementToggleFunc dan kirimkan elemen this (button) sebagai argumen
+  elementToggleFunc(this);
+});
 
 // add event in all select items
 for (let i = 0; i < selectItems.length; i++) {
