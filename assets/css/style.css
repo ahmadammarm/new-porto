@@ -864,6 +864,11 @@ main {
   color: var(--orange-yellow-crayola);
  }
 
+ .skills-list {
+  display: none;
+  list-style: none;
+}
+
 .skill-category-title.active {
   color: var(--orange-yellow-crayola);
 }
