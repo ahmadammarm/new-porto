@@ -1,5 +1,49 @@
 'use strict';
 
+$(document).ready(function(){
+  // Tambahkan event click pada setiap judul kategori
+  $('.skill-category-title').click(function(){
+    // Sembunyikan semua daftar skill terlebih dahulu
+    $('.skills-list').hide();
+
+    // Temukan skill yang sesuai dengan judul yang diklik
+    var index = $(this).index();
+    var skillList = $('.skills-list').eq(index);
+
+    // Periksa apakah skill list sudah ditampilkan atau belum
+    if(skillList.is(':visible')){
+      // Jika sudah ditampilkan, sembunyikan
+      skillList.hide();
+    } else {
+      // Jika belum ditampilkan, tampilkan dan sembunyikan yang lain
+      $('.skills-list').hide();
+      skillList.show();
+    }
+  });
+
+  // Tambahkan event click pada setiap judul skill
+  $('.skills-item .title-wrapper').click(function(){
+    // Ambil teks dari judul skill yang diklik
+    var skillTitle = $(this).find('h5').text();
+    
+    // Lakukan sesuatu dengan judul skill yang diambil
+    // Contohnya, mungkin tampilkan judul skill di tempat lain atau lakukan aksi khusus
+    console.log(skillTitle); // Tampilkan judul skill di console
+  });
+});
+
+function changeColor(clickedElement) {
+  var elements = document.querySelectorAll('.skill-category-title h4');
+
+  elements.forEach(function(element) {
+    if (element === clickedElement) {
+      element.style.color = "hsl(45, 100%, 72%)";
+    } else {
+      element.style.color = "";
+    }
+  });
+}
+
 
 
 // element toggle function

@@ -655,8 +655,22 @@
 
           <section class="skill">
             <h3 class="h3 skills-title">My skills</h3>
+            <div class="skill-category">
+              <div class="skill-category-title all">
+                <h4 class="h4" onclick="changeColor(this)">All</h4>
+              </div>
+              <div class="skill-category-title language">
+                <h4 class="h4" onclick="changeColor(this)">Language</h4>
+              </div>
+              <div class="skill-category-title framework">
+                <h4 class="h4" onclick="changeColor(this)">Framework/Library</h4>
+              </div>
+              <div class="skill-category-title tools">
+                <h4 class="h4" onclick="changeColor(this)">Tools</h4>
+              </div>
+            </div>            
             
-            <ul class="skills-list content-card">
+            <ul class="skills-list content-card all-skills">
               <li class="skills-item">
                 <div class="title-wrapper">
                   <h5 class="h5">HTML</h5>
@@ -678,17 +692,6 @@
                   <div class="skill-progress-fill" style="width: 70%"></div>
                 </div>
               </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Tailwind CSS</h5>
-                  <data value="50">50%</data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 50%"></div>
-                </div>
-              </li>
               <li class="skills-item">
                 <div class="title-wrapper">
                   <h5 class="h5">Javascript</h5>
@@ -697,6 +700,25 @@
 
                 <div class="skill-progress-bg">
                   <div class="skill-progress-fill" style="width: 30%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Typescript</h5>
+                  <data value="50">10%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 10%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Tailwind CSS</h5>
+                  <data value="50">50%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
                 </div>
               </li>
               <li class="skills-item">
@@ -721,12 +743,138 @@
               </li>
               <li class="skills-item">
                 <div class="title-wrapper">
-                  <h5 class="h5">Typescript</h5>
-                  <data value="50">10%</data>
+                  <h5 class="h5">Figma</h5>
+                  <data value="50">40%</data>
                 </div>
 
                 <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 40%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Git</h5>
+                  <data value="50">60%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Github</h5>
+                  <data value="50">60%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%"></div>
+                </div>
+              </li>
+            </ul>
+            <ul class="skills-list content-card language-skills">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">HTML</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">CSS</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Javascript</h5>
+                  <data value="50">30%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 30%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Typescript</h5>
+                  <data value="50">10%</data>
+                </div>
+                <div class="skill-progress-bg">
                   <div class="skill-progress-fill" style="width: 10%"></div>
+                </div>
+              </li>
+            </ul>
+            <ul class="skills-list content-card framework-skills">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Tailwind CSS</h5>
+                  <data value="50">50%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">React</h5>
+                  <data value="50">30%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 30%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Next Js</h5>
+                  <data value="50">20%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 20%"></div>
+                </div>
+              </li>
+            </ul>
+            <ul class="skills-list content-card tools-skills">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Figma</h5>
+                  <data value="50">40%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 40%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Git</h5>
+                  <data value="50">60%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Github</h5>
+                  <data value="50">60%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%"></div>
                 </div>
               </li>
             </ul>
@@ -1382,6 +1530,10 @@
       </div>
     </main>
     <!-- Main Content End -->
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
     <!-- Sweet Alert CDN -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

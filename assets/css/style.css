@@ -847,6 +847,27 @@ main {
  * skills 
  */
 
+ .skill-category {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 25px;
+ }
+
+ .skill-category .skill-category-title .h4 {
+  cursor: pointer;
+  transition: all 0.3s ease;
+ }
+
+ .skill-category-title .h4:hover {
+  color: var(--orange-yellow-crayola);
+ }
+
+.skill-category-title.active {
+  color: var(--orange-yellow-crayola);
+}
+
 .skills-title { margin-bottom: 20px; }
 
 .skills-list { padding: 20px; }
@@ -1905,6 +1926,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 @media (max-width: 768px) {
   .social-item .social-link {
+    font-size: 14px;
+  }
+
+  .skill-category .skill-category-title .h4 {
     font-size: 14px;
   }
 }
