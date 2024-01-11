@@ -319,7 +319,7 @@ main {
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
-  border-radius: 0px;
+  border-radius: 20px;
 }
 
 .avatar-box img {
