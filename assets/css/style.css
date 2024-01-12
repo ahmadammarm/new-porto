@@ -847,6 +847,11 @@ main {
  * skills 
  */
 
+.skill-header {
+  display: flex;
+  margin-bottom: 20px;
+}
+
  .skill-category {
   display: flex;
   justify-content: flex-start;
@@ -876,7 +881,7 @@ main {
   color: var(--orange-yellow-crayola);
 }
 
-.skills-title { margin-bottom: 20px; }
+.skills-title { margin-bottom: 20px; margin-top: 5px; margin-left: 15px; }
 
 .skills-list { padding: 20px; }
 
@@ -1935,6 +1940,14 @@ textarea.form-input::-webkit-resizer { display: none; }
 @media (max-width: 768px) {
   .social-item .social-link {
     font-size: 16px;
+  }
+
+  .skill-header {
+    display: flex;
+  }
+
+  #skills-icon-title {
+    margin-top: 5px;
   }
 
   .skill-category .skill-category-title .h4 {
