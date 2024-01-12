@@ -856,7 +856,7 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 30px;
+  gap: 19px;
   margin-bottom: 25px;
  }
 
@@ -1963,5 +1963,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5px;
   }
 }
