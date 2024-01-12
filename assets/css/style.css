@@ -860,11 +860,19 @@ main {
   margin-bottom: 25px;
  }
 
+ /* .skill-category .skill-category-title {
+  background: var(--border-gradient-onyx);
+  padding: 10px 15px;
+  border-radius: 14px;
+ } */
+
  .skill-category .skill-category-title .h4 {
   cursor: pointer;
   transition: all 0.3s ease;
-  font-style: italic;
   font-weight: 600;
+  background: var(--border-gradient-onyx);
+  padding: 10px 15px;
+  border-radius: 14px;
  }
 
  .skill-category-title .h4:hover {
