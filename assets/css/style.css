@@ -1933,9 +1933,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 @media (max-width: 768px) {
-  .social-item .social-link {
-    font-size: 14px;
-  }
 
   .skill-category .skill-category-title .h4 {
     font-size: 16px;
