@@ -1017,7 +1017,10 @@ main {
   transform: rotate(0.5turn);
 }
 
-
+.filter-list button.selected,
+.select-list button.selected {
+  color: var(--orange-yellow-crayola);
+}
 
 .select-list {
   background: var(--eerie-black-2);

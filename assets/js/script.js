@@ -136,8 +136,7 @@ const filterFunc = function (selectedValue) {
 
 // Initial filter for web development and set the initial styling
 filterFunc("web development");
-setActiveFilterBtn(document.querySelector("[data-filter-btn]:first-child"));
-
+setActiveFilterBtn(document.querySelector("[data-filter-btn].selected"));
 
 // add event in all filter button items for large screen
 let lastClickedBtn = filterBtns[0];
@@ -148,11 +147,12 @@ for (let i = 0; i < filterBtns.length; i++) {
     selectValue.innerText = this.innerText;
     filterFunc(selectedValue);
 
-    lastClickedBtn.classList.remove("active");
-    this.classList.add("active");
+    lastClickedBtn.classList.remove("selected");
+    this.classList.add("selected");
     lastClickedBtn = this;
   });
 }
+
 
 
 const scriptURL =
