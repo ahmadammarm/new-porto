@@ -87,7 +87,6 @@ modalCloseBtn.addEventListener("click", testimonialsModalFunc);
 overlay.addEventListener("click", testimonialsModalFunc);
 
 // custom select variables
-// custom select variables
 const select = document.querySelector("[data-select]");
 const selectItems = document.querySelectorAll("[data-select-item]");
 const selectValue = document.querySelector("[data-selecct-value]");
@@ -152,6 +151,22 @@ for (let i = 0; i < filterBtns.length; i++) {
     lastClickedBtn = this;
   });
 }
+
+// add event in all select items for large screen
+let lastClickedSelectItem = selectItems[0];
+
+for (let i = 0; i < selectItems.length; i++) {
+  selectItems[i].addEventListener("click", function () {
+    let selectedValue = this.innerText.toLowerCase();
+    selectValue.innerText = this.innerText;
+    filterFunc(selectedValue);
+
+    lastClickedSelectItem.classList.remove("selected");
+    this.classList.add("selected");
+    lastClickedSelectItem = this;
+  });
+}
+
 
 
 
