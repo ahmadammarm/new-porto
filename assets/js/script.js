@@ -87,19 +87,22 @@ modalCloseBtn.addEventListener("click", testimonialsModalFunc);
 overlay.addEventListener("click", testimonialsModalFunc);
 
 // custom select variables
+// custom select variables
 const select = document.querySelector("[data-select]");
 const selectItems = document.querySelectorAll("[data-select-item]");
 const selectValue = document.querySelector("[data-selecct-value]");
-const filterBtn = document.querySelectorAll("[data-filter-btn]");
+const filterBtns = document.querySelectorAll("[data-filter-btn]");
 
 function elementToggleFunc(element) {
-  // Lakukan operasi toggle pada elemen yang diberikan (misalnya, tampilkan atau sembunyikan)
   element.classList.toggle("active");
 }
 
-// Menggunakan event listener pada button dengan id "select"
+function setActiveFilterBtn(button) {
+  filterBtns.forEach((btn) => btn.classList.remove("selected"));
+  button.classList.add("selected");
+}
+
 select.addEventListener("click", function () {
-  // Panggil fungsi elementToggleFunc dan kirimkan elemen this (button) sebagai argumen
   elementToggleFunc(this);
 });
 
@@ -110,6 +113,7 @@ for (let i = 0; i < selectItems.length; i++) {
     selectValue.innerText = this.innerText;
     elementToggleFunc(select);
     filterFunc(selectedValue);
+    setActiveFilterBtn(this);
   });
 }
 
@@ -120,7 +124,9 @@ const filterFunc = function (selectedValue) {
   for (let i = 0; i < filterItems.length; i++) {
     if (selectedValue === "all") {
       filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
+    } else if (
+      selectedValue === filterItems[i].dataset.category.toLowerCase()
+    ) {
       filterItems[i].classList.add("active");
     } else {
       filterItems[i].classList.remove("active");
@@ -128,11 +134,16 @@ const filterFunc = function (selectedValue) {
   }
 };
 
-// add event in all filter button items for large screen
-let lastClickedBtn = filterBtn[0];
+// Initial filter for web development and set the initial styling
+filterFunc("web development");
+setActiveFilterBtn(document.querySelector("[data-filter-btn]:first-child"));
 
-for (let i = 0; i < filterBtn.length; i++) {
-  filterBtn[i].addEventListener("click", function () {
+
+// add event in all filter button items for large screen
+let lastClickedBtn = filterBtns[0];
+
+for (let i = 0; i < filterBtns.length; i++) {
+  filterBtns[i].addEventListener("click", function () {
     let selectedValue = this.innerText.toLowerCase();
     selectValue.innerText = this.innerText;
     filterFunc(selectedValue);
@@ -142,6 +153,7 @@ for (let i = 0; i < filterBtn.length; i++) {
     lastClickedBtn = this;
   });
 }
+
 
 const scriptURL =
   "https://script.google.com/macros/s/AKfycby-TIGP5hd3qZDQkAWczflI3qVDorrRt3egys1dGRolltGTEX6xI5XdumXT7CQdFqiAvA/exec";
