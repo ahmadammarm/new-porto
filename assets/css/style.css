@@ -1823,10 +1823,6 @@ textarea.form-input::-webkit-resizer {
     transition: var(--transition-1);
   }
 
-  /* .filter-item button:hover {
-    color: var(--light-gray-70);
-  } */
-
   .filter-item button.active {
     color: var(--orange-yellow-crayola);
   }
