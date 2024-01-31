@@ -1147,6 +1147,7 @@ main {
 
 .project-item > a:hover img {
   transform: scale(1.1);
+  filter: blur(2px);
 }
 
 .project-title,
