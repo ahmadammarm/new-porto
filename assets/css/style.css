@@ -1009,7 +1009,9 @@ main {
   border-radius: 12px;
   border: 1px solid var(--orange-yellow-crayola);
   padding: 10px;
+  box-shadow: 0.5px 2px 3px var(--orange-yellow-crayola);
 }
+
 
 
 /*-----------------------------------*\
