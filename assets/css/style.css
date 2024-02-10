@@ -997,6 +997,10 @@ main {
   margin-bottom: 25px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  box-shadow: 0.5px 2px 3px var(--orange-yellow-crayola);
+  border: 1px solid var(--orange-yellow-crayola);
+  border-radius: 12px;
+  background-color: rgb(24 24 27);
 }
 
 .skills-images:active {
@@ -1007,9 +1011,7 @@ main {
   width: 75px;
   height: 75px;
   border-radius: 12px;
-  border: 1px solid var(--orange-yellow-crayola);
   padding: 10px;
-  box-shadow: 0.5px 2px 3px var(--orange-yellow-crayola);
 }
 
 
