@@ -2144,4 +2144,13 @@ textarea.form-input::-webkit-resizer {
     align-items: center;
     justify-content: center;
   }
+  .skills-images {
+    width: 60px;
+    height: 60px;
+  }
+
+  .skills-images img {
+    width: 60px;
+    height: 60px;
+  }
 }
