@@ -997,7 +997,7 @@ main {
   flex-wrap: wrap;
   margin-bottom: 25px;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
   box-shadow: 0.5px 2px 3px var(--orange-yellow-crayola);
   border: 1px solid var(--orange-yellow-crayola);
   border-radius: 12px;
@@ -1019,6 +1019,27 @@ main {
   border-radius: 12px;
   padding: 10px;
 }
+
+.skills-images {
+  position: relative;
+  display: inline-block;
+}
+
+.skills-images:hover::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: var(--orange-yellow-crayola);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 10px;
+  z-index: 1;
+  text-align: center;
+}
+
 
 
 
@@ -2158,5 +2179,9 @@ textarea.form-input::-webkit-resizer {
   .skills-images img {
     width: 60px;
     height: 60px;
+  }
+
+  .skills-images:hover::after {
+    font-size: 7px;
   }
 }
