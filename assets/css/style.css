@@ -1005,7 +1005,7 @@ main {
 }
 
 .skills-images:hover {
-  box-shadow: 0.5px 2px 5px var(--orange-yellow-crayola);
+  box-shadow: 0.5px 2px 10px var(--orange-yellow-crayola);
 }
 
 .skills-images:active {
