@@ -1006,6 +1006,7 @@ main {
 
 .skills-images:hover {
   background-color: rgb(38 38 38);
+  box-shadow: 0.5px 2px 5px var(--orange-yellow-crayola);
 }
 
 .skills-images:active {
