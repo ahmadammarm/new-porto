@@ -1001,11 +1001,10 @@ main {
   box-shadow: 0.5px 2px 3px var(--orange-yellow-crayola);
   border: 1px solid var(--orange-yellow-crayola);
   border-radius: 12px;
-  background-color: rgb(24 24 27);
+  background-color: rgb(38 38 38);
 }
 
 .skills-images:hover {
-  background-color: rgb(38 38 38);
   box-shadow: 0.5px 2px 5px var(--orange-yellow-crayola);
 }
 
@@ -1035,7 +1034,7 @@ main {
   color: var(--orange-yellow-crayola);
   padding: 5px 10px;
   border-radius: 5px;
-  font-size: 10px;
+  font-size: 11px;
   z-index: 1;
   text-align: center;
 }
@@ -2182,6 +2181,6 @@ textarea.form-input::-webkit-resizer {
   }
 
   .skills-images:hover::after {
-    font-size: 7.5px;
+    display: none;
   }
 }
