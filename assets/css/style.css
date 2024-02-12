@@ -2179,6 +2179,20 @@ textarea.form-input::-webkit-resizer {
   
 
   .skills-images:hover::after {
+    content: attr(data-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    height: 60px;
+    width: 60px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--orange-yellow-crayola);
+    padding: 5px 5px;
+    border-radius: 10px;
     font-size: 7px;
+    z-index: 1;
   }
 }
