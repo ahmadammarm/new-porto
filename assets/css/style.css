@@ -1035,7 +1035,7 @@ main {
   background-color: rgba(0, 0, 0, 0.8);
   color: var(--orange-yellow-crayola);
   padding: 5px 5px;
-  border-radius: 10px;
+  border-radius: 12px;
   font-size: 11px;
   z-index: 1;
   text-align: center;
@@ -2196,7 +2196,7 @@ textarea.form-input::-webkit-resizer {
     background-color: rgba(0, 0, 0, 0.8);
     color: var(--orange-yellow-crayola);
     padding: 5px 5px;
-    border-radius: 10px;
+    border-radius: 12px;
     font-size: 7px;
     z-index: 1;
     text-align: center;
