@@ -185,8 +185,8 @@ function handleSubmit(event) {
     // Menampilkan SweetAlert jika terjadi kesalahan input
     Swal.fire({
       icon: "error",
-      title: "Kesalahan",
-      text: "Harap lengkapi semua kolom sebelum mengirim pesan",
+      title: "Error",
+      text: "Please fill all the form fields!",
     });
     return;
   }
@@ -197,8 +197,8 @@ function handleSubmit(event) {
       // Menampilkan SweetAlert setelah pengiriman berhasil
       Swal.fire({
         icon: "success",
-        title: "Berhasil",
-        text: "Pesan telah terkirim",
+        title: "Success",
+        text: "Message sent successfully!",
         showConfirmButton: false,
         timer: 2000, // Menutup otomatis pesan setelah 2 detik
       });
