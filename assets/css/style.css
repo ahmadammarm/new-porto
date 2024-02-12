@@ -2179,6 +2179,6 @@ textarea.form-input::-webkit-resizer {
   
 
   .skills-images:hover::after {
-    font-size: 6px;
+    font-size: 7px;
   }
 }
