@@ -190,28 +190,28 @@ function handleSubmit(event) {
     });
     return;
   }
-
+  // Menampilkan SweetAlert jika input berhasil dikirim
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
     .then((response) => {
       console.log("Success!", response);
-      // Menampilkan SweetAlert setelah pengiriman berhasil
+
       Swal.fire({
         icon: "success",
         title: "Success",
         text: "Message sent successfully!",
         showConfirmButton: false,
-        timer: 2000, // Menutup otomatis pesan setelah 2 detik
+        timer: 2000,
       });
-      // Mereset inputan
+    
       form.reset();
     })
+    // Menampilkan SweetAlert jika terjadi kesalahan saat mengirim pesan
     .catch((error) => {
       console.error("Error!", error.message);
-      // Menampilkan SweetAlert jika terjadi kesalahan
       Swal.fire({
         icon: "error",
-        title: "Kesalahan",
-        text: "Terjadi kesalahan saat mengirim pesan",
+        title: "Error",
+        text: "Something went wrong! Please try again later.",
       });
     });
 }
