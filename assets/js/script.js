@@ -214,7 +214,7 @@ function handleSubmit(event) {
         text: "Something went wrong! Please try again later.",
       });
     });
-}
+};
 
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
