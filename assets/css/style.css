@@ -929,7 +929,9 @@ main {
   border-radius: 50%;
   box-shadow: 0 0 0 4px var(--jet);
 }
-
+.timeline {
+  padding-top: 30px;
+}
 .experiences-list {
   display: flex;
   justify-content: flex-start;
@@ -937,6 +939,7 @@ main {
   gap: 15px;
   margin: 0 -15px;
   padding: 25px 15px;
+  padding-top: 30px
   padding-bottom: 30px;
   overflow-x: auto;
   scroll-behavior: smooth;
