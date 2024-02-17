@@ -846,7 +846,11 @@ main {
   padding-bottom: 25px;
 }
 
+
 .timeline-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.timeline-item-experience:not(:last-child) {
   margin-bottom: 20px;
 }
 
@@ -854,7 +858,7 @@ main {
   font-size: 18px;
   line-height: 1.3;
   margin-bottom: 7px;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .timeline-list span {
@@ -863,13 +867,26 @@ main {
   line-height: 1.6;
 }
 
-.timeline-list .link-sertifikat {
+.timeline-list-experience .timeline-experience {
   color: var(--vegas-gold);
   font-weight: bold;
   font-size: 15px;
   line-height: 1.6;
   text-decoration: none;
-  font-style: italic;
+}
+
+.timeline-item-experience {
+  position: relative;
+  padding-bottom: 25px;
+}
+
+.timeline-item-experience:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.timeline-list-experience {
+  font-size: var(--fs-6);
+  margin-left: 58px;
 }
 
 .timeline-item:not(:last-child)::before {
@@ -883,6 +900,18 @@ main {
 }
 
 .timeline-item::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -33px;
+  height: 6px;
+  width: 6px;
+  background: var(--text-gradient-yellow);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--jet);
+}
+
+.timeline-item-experience::after {
   content: "";
   position: absolute;
   top: 5px;
