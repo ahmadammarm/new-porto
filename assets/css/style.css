@@ -2230,4 +2230,13 @@ textarea.form-input::-webkit-resizer {
     z-index: 1;
     text-align: center;
   }
+  .timeline-item-title {
+    font-size: 14px;
+  }
+  .timeline-list span {
+    font-size: 13px;
+  }
+  .timeline-list-experience .timeline-experience {
+    font-size: 13px;
+  }
 }
