@@ -869,7 +869,7 @@ main {
 
 .timeline-list-experience .timeline-experience {
   color: var(--vegas-gold);
-  font-weight: bold;
+  font-weight: 300;
   font-size: 15px;
   line-height: 1.6;
   text-decoration: none;
