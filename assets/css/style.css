@@ -720,6 +720,25 @@ main {
   opacity: 1;
 }
 
+.experiences-modal {
+  background: var(--eerie-black-2);
+  position: relative;
+  padding: 15px;
+  margin: 15px 12px;
+  border: 1px solid var(--jet);
+  border-radius: 14px;
+  box-shadow: var(--shadow-5);
+  transform: scale(1.2);
+  opacity: 0;
+  transition: var(--transition-1);
+  z-index: 2;
+}
+
+.modal-container.active .experiences-modal {
+  transform: scale(1);
+  opacity: 1;
+}
+
 .modal-close-btn {
   position: absolute;
   top: 15px;
@@ -911,22 +930,60 @@ main {
   box-shadow: 0 0 0 4px var(--jet);
 }
 
-.timeline-item-experience::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: -33px;
-  height: 6px;
-  width: 6px;
-  background: var(--text-gradient-yellow);
-  border-radius: 50%;
-  box-shadow: 0 0 0 4px var(--jet);
+.experiences-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  margin: 0 -15px;
+  padding: 25px 15px;
+  padding-bottom: 30px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
 }
 
-.timeline-text {
-  color: var(--light-gray);
+.experiences-item {
+  min-width: 100%;
+  scroll-snap-align: center;
+}
+
+.experiences-avatar-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(15px, -25px);
+  background: var(--bg-gradient-onyx);
+  border-radius: 14px;
+  box-shadow: var(--shadow-1);
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.experiences-avatar-box img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.experiences-item-title {
+  margin-bottom: 7px;
+  margin-top: 12px;
+}
+
+.experiences-text {
+  color: var(--vegas-gold);
+  font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
+  display: -webkit-box;
+  line-clamp: 4;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /**
@@ -2237,6 +2294,16 @@ textarea.form-input::-webkit-resizer {
     font-size: 13px;
   }
   .timeline-list-experience .timeline-experience {
+    font-size: 13px;
+  }
+  .experiences-item-title {
+    margin-top: 0px;
+  }
+  .experiences-avatar-box img {
+    width: 20px;
+    height: 20px;
+  }
+  .experiences-text {
     font-size: 13px;
   }
 }
