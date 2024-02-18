@@ -947,7 +947,7 @@ main {
 }
 
 .experiences-item {
-  min-width: 100%;
+  min-width: 50%;
   scroll-snap-align: center;
 }
 
@@ -2321,5 +2321,10 @@ textarea.form-input::-webkit-resizer {
   }
   .experiences-text {
     font-size: 13px;
+  }
+
+  .experiences-item {
+    min-width: 100%;
+    scroll-snap-align: center;
   }
 }
