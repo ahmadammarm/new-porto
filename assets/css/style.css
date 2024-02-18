@@ -972,8 +972,16 @@ main {
 }
 
 .experiences-item-title {
-  margin-bottom: 7px;
   margin-top: 12px;
+}
+
+.experiences-subtitle {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-style: italic;
 }
 
 .experiences-text {
@@ -2300,6 +2308,9 @@ textarea.form-input::-webkit-resizer {
   }
   .experiences-item-title {
     margin-top: 0px;
+  }
+  .experiences-subtitle {
+    font-size: 14px;
   }
   .experiences-avatar-box img {
     width: 20px;
