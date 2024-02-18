@@ -86,6 +86,8 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 modalCloseBtn.addEventListener("click", testimonialsModalFunc);
 overlay.addEventListener("click", testimonialsModalFunc);
 
+
+
 // custom select variables
 const select = document.querySelector("[data-select]");
 const selectItems = document.querySelectorAll("[data-select-item]");
@@ -134,7 +136,7 @@ const filterFunc = function (selectedValue) {
 };
 
 // Initial filter for web development and set the initial styling
-filterFunc("web development");
+filterFunc("deployed");
 setActiveFilterBtn(document.querySelector("[data-filter-btn].selected"));
 
 // add event in all filter button items for large screen

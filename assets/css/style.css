@@ -967,8 +967,8 @@ main {
 .experiences-avatar-box img {
   width: 30px;
   height: 30px;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 9px;
+  margin-left: 9px;
 }
 
 .experiences-item-title {
@@ -995,6 +995,8 @@ main {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+
 
 /**
  * skills 
