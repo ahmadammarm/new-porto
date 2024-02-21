@@ -1139,6 +1139,12 @@ main {
   text-align: center;
 }
 
+.edu-title, .skills-title, .experiences-title{
+  background: var(--bg-gradient-onyx);
+  padding: 10px 15px;
+  border-radius: 14px;
+}
+
 
 
 
@@ -2329,5 +2335,8 @@ textarea.form-input::-webkit-resizer {
   }
   .edu-title, .skills-title, .experiences-title{
     font-size: 20px;
+    background: var(--bg-gradient-onyx);
+    padding: 10px 15px;
+    border-radius: 14px;
   }
 }
