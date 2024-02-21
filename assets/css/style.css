@@ -2307,7 +2307,7 @@ textarea.form-input::-webkit-resizer {
     z-index: 1;
     text-align: center;
   }
-  .timeline-title {
+  .timeline-title, .timeline-item-title {
     font-size: 17px;
   }
   .timeline-list span {
