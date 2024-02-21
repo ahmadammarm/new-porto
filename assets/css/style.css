@@ -1143,6 +1143,7 @@ main {
   background: var(--bg-gradient-onyx);
   padding: 10px 15px;
   border-radius: 14px;
+  color: var(--vegas-gold);
 }
 
 
