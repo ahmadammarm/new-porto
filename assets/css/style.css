@@ -2328,6 +2328,6 @@ textarea.form-input::-webkit-resizer {
     scroll-snap-align: center;
   }
   .edu-title, .skills-title, .experiences-title{
-    font-size: 25px;
+    font-size: 20px;
   }
 }
