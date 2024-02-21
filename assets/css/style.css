@@ -2327,4 +2327,7 @@ textarea.form-input::-webkit-resizer {
     min-width: 100%;
     scroll-snap-align: center;
   }
+  .edu-title, .skills-title, .experiences-title{
+    font-size: 25px;
+  }
 }
