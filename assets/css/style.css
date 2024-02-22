@@ -544,7 +544,7 @@ main {
 }
 
 .download-cv button {
-  background: var(--bg-gradient-onyx);
+  background: var(--eerie-black-1);
   color: var(--orange-yellow-crayola);
   padding: 10px 15px;
   border-radius: 14px;
