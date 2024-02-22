@@ -971,6 +971,8 @@ main {
 .experiences-item {
   min-width: 50%;
   scroll-snap-align: center;
+  border: 1px solid var(--orange-yellow-crayola);
+  border-radius: 14px;
 }
 
 .experiences-avatar-box {
