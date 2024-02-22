@@ -984,6 +984,7 @@ main {
   display: flex;
   flex-direction: row;
   padding: 10px;
+  border: 1px solid var(--orange-yellow-crayola)
 }
 
 .experiences-avatar-box img {
@@ -2364,5 +2365,8 @@ textarea.form-input::-webkit-resizer {
   }
   .download-cv button {
     font-size: 14px;
+  }
+  .download-cv button:hover {
+    background: var(--eerie-black-1);
   }
 }
