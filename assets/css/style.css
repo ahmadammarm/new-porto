@@ -549,9 +549,14 @@ main {
   padding: 10px 15px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
-  transition: var(--transition-1);
+  transition: background 0.3s ease;
+  border: 1px solid var(--orange-yellow-crayola);
 }
 
+.download-cv button:hover {
+  background: var(--bg-gradient-yellow-1);
+  border: 1px solid var(--orange-yellow-crayola);
+}
 /**
  * #service 
  */
