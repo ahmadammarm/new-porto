@@ -241,3 +241,15 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
   });
 }
+
+document.getElementById("downloadButton").addEventListener("click", function() {
+  var fileUrl = "assets/CV_Ahmad_Ammar.pdf";
+  var fileName = "CV_Ahmad_Ammar.pdf";
+
+  var link = document.createElement("a");
+  link.href = fileUrl;
+  link.download = fileName;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+});

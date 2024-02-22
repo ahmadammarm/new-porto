@@ -536,12 +536,29 @@ main {
   margin-bottom: 15px;
 }
 
+.download-cv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.download-cv button {
+  background: var(--bg-gradient-onyx);
+  color: var(--orange-yellow-crayola);
+  padding: 10px 15px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  transition: var(--transition-1);
+}
+
 /**
  * #service 
  */
 
 .service {
   margin-bottom: 35px;
+  margin-top: 35px;
 }
 
 .service-title {
@@ -2339,5 +2356,8 @@ textarea.form-input::-webkit-resizer {
     background: var(--bg-gradient-onyx);
     padding: 10px 15px;
     border-radius: 14px;
+  }
+  .download-cv button {
+    font-size: 14px;
   }
 }
