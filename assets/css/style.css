@@ -973,7 +973,9 @@ main {
   scroll-snap-align: center;
   border: 1px solid var(--orange-yellow-crayola);
   border-radius: 14px;
+  transition: all 0.3s ease;
 }
+
 
 .experiences-avatar-box {
   position: absolute;
