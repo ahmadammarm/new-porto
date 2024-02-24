@@ -908,6 +908,12 @@ main {
   line-height: 1.6;
 }
 
+.timeline-list a {
+  color: var(--vegas-gold);
+  font-weight: bold;
+  line-height: 1.6;
+}
+
 .timeline-list-experience .timeline-experience {
   color: var(--vegas-gold);
   font-weight: 300;
