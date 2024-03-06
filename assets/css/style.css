@@ -557,6 +557,32 @@ main {
   background: var(--bg-gradient-yellow-1);
   border: 1px solid var(--orange-yellow-crayola);
 }
+
+.spotify-section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.spotify-section h3 {
+  color: var(--white-2);
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.spotify-section h3 a {
+  color: var(--orange-yellow-crayola);
+  margin-left: 5px;
+}
+
+.spotify-section .spotify-listening {
+  background: var(--eerie-black-1);
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  width: 40%;
+}
+
+
+
 /**
  * #service 
  */
@@ -2381,5 +2407,8 @@ textarea.form-input::-webkit-resizer {
   }
   .download-cv button:hover {
     background: var(--eerie-black-1);
+  }
+  .spotify-section .spotify-listening {
+    width: 100%;
   }
 }
