@@ -135,6 +135,23 @@ const filterFunc = function (selectedValue) {
   }
 };
 
+function showCategory(categoryId) {
+  // Mengambil semua kategori
+  var categories = document.querySelectorAll('.skills-category');
+
+  // Mengulang setiap kategori
+  categories.forEach(function(category) {
+    // Menyembunyikan kategori jika ID-nya tidak cocok
+    if (category.id !== categoryId) {
+      category.style.display = "none";
+    } else {
+      // Menampilkan kategori jika ID-nya cocok
+      category.style.display = "block";
+    }
+  });
+}
+
+
 // Initial filter for web development and set the initial styling
 filterFunc("independent");
 setActiveFilterBtn(document.querySelector("[data-filter-btn].selected"));
