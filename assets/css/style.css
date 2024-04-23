@@ -1395,6 +1395,27 @@ main {
   font-weight: var(--fw-300);
 }
 
+
+.link-github {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  border-radius: 14px;
+  /* border: 1px solid var(--border-gradient-onyx); */
+  background: var(--bg-gradient-jet);
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  box-shadow: var(--shadow-2);
+  transition: all 0.3s ease-in-out;
+}
+
+.link-github:hover {
+  background: var(--bg-gradient-onyx);
+}
 /*-----------------------------------*\
   #BLOG
 \*-----------------------------------*/
