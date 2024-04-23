@@ -1398,7 +1398,7 @@ main {
 
 .link-github {
   display: flex;
-  margin-top: 10px;
+  margin-top: 5px;
   justify-content: center;
   align-items: center;
   gap: 10px;
