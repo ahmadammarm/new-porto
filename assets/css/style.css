@@ -643,6 +643,8 @@ main {
   line-height: 1.6;
 }
 
+
+
 /**
  * #testimonials 
  */
@@ -1035,16 +1037,30 @@ main {
 }
 
 .experiences-subtitle {
-  color: var(--light-gray);
+  color: var(--vegas-gold);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
   margin-bottom: 15px;
   font-style: italic;
+  font-weight: 700;
 }
 
 .experiences-text {
   color: var(--vegas-gold);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  display: -webkit-box;
+  line-clamp: 4;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.experiences-description {
+  margin-bottom: 10px;
+  color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
