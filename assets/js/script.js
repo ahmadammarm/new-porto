@@ -109,8 +109,6 @@ const experiencesModalFunc = function () {
 // add click event to all modal items
 for (let i = 0; i < experiencesItem.length; i++) {
   experiencesItem[i].addEventListener("click", function () {
-    expModalImg.src = this.querySelector("[data-experiences-avatar]").src;
-    expModalImg.alt = this.querySelector("[data-experiences-avatar]").alt;
     expModalTitle.innerHTML = this.querySelector(
       "[data-experiences-title]"
     ).innerHTML;

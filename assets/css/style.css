@@ -893,7 +893,7 @@ main {
 .experiences-modal {
   background: var(--eerie-black-2);
   position: relative;
-  padding: 15px;
+  padding: 20px;
   margin: 15px 12px;
   border: 1px solid var(--vegas-gold);
   border-radius: 14px;
