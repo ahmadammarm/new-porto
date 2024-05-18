@@ -86,6 +86,53 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 modalCloseBtn.addEventListener("click", testimonialsModalFunc);
 overlay.addEventListener("click", testimonialsModalFunc);
 
+// Experiences variables
+// experiences variables
+const experiencesItem = document.querySelectorAll("[data-experiences-item]");
+const expModalContainer = document.querySelector("[exp-data-modal-container]");
+const expModalCloseBtn = document.querySelector("[exp-data-modal-close-btn]");
+const expOverlay = document.querySelector("[exp-data-overlay]");
+
+// modal variable
+const expModalImg = document.querySelector("[exp-data-modal-img]");
+const expModalTitle = document.querySelector("[exp-data-modal-title]");
+const expModalSubtitle = document.querySelector("[exp-data-modal-subtitle]");
+const expModalText = document.querySelector("[exp-data-modal-text]");
+const expModalDate = document.querySelector("[exp-data-modal-date]");
+
+// modal toggle function
+const experiencesModalFunc = function () {
+  expModalContainer.classList.toggle("active");
+  expOverlay.classList.toggle("active");
+};
+
+// add click event to all modal items
+for (let i = 0; i < experiencesItem.length; i++) {
+  experiencesItem[i].addEventListener("click", function () {
+    expModalImg.src = this.querySelector("[data-experiences-avatar]").src;
+    expModalImg.alt = this.querySelector("[data-experiences-avatar]").alt;
+    expModalTitle.innerHTML = this.querySelector(
+      "[data-experiences-title]"
+    ).innerHTML;
+    expModalSubtitle.innerHTML = this.querySelector(
+      "[data-experiences-subtitle]"
+    ).innerHTML;
+    expModalText.innerHTML = this.querySelector(
+      "[data-experiences-text]"
+    ).innerHTML;
+    expModalDate.innerHTML = this.querySelector(
+      "[data-experiences-date]"
+    ).innerHTML;
+
+    experiencesModalFunc();
+  });
+}
+
+// add click event to modal close button
+expModalCloseBtn.addEventListener("click", experiencesModalFunc);
+expOverlay.addEventListener("click", experiencesModalFunc);
+
+
 
 
 // custom select variables
