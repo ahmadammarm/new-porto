@@ -1368,8 +1368,9 @@ main {
   transition: var(--transition-1);
 }
 
-
-
+.disabled-link {
+  pointer-events: none;
+}
 
 .project-item > a:hover .project-item-icon-box {
   --scale: 1;
