@@ -14,13 +14,13 @@
     hsl(240, 2%, 13%);
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right,
-    hsl(45, 100%, 71%) 0%,
-    hsla(36, 100%, 69%, 0) 50%
+    #1CA28F 0%,
+    #17907A 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
       135deg,
-      hsla(45, 100%, 71%, 0.251) 0%,
-      hsla(35, 100%, 68%, 0) 59.86%
+      #1CA28F 0%,
+      #17907A 59.86%
     ),
     hsl(240, 2%, 13%);
   --border-gradient-onyx: linear-gradient(
@@ -30,8 +30,8 @@
   );
   --text-gradient-yellow: linear-gradient(
     to right,
-    hsl(45, 100%, 72%),
-    hsl(35, 100%, 68%)
+    #1CA28F,
+    #17907A
   );
 
   /* solid */
@@ -43,8 +43,8 @@
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(45, 100%, 72%);
-  --vegas-gold: hsl(45, 54%, 58%);
+  --orange-yellow-crayola: #178E7A;
+  --vegas-gold: #178E7A;
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
@@ -553,13 +553,12 @@ main {
   padding: 10px 15px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
-  transition: background 0.3s ease;
+  transition: all 0.3s ease-in-out;
   border: 1px solid var(--orange-yellow-crayola);
 }
 
 .download-cv button:hover {
-  background: var(--bg-gradient-yellow-1);
-  border: 1px solid var(--orange-yellow-crayola);
+  transform: translateY(-5px);
 }
 
 .spotify-section {
@@ -634,10 +633,15 @@ main {
 
 .service-content-box {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .service-item-title {
   margin-bottom: 7px;
+  color: var(--vegas-gold);
 }
 
 .service-item-text {
@@ -645,6 +649,7 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
   line-height: 1.6;
+  text-align: center;
 }
 
 
@@ -1355,7 +1360,7 @@ main {
   transform: translateY(-100%);
   left: 50%;
   background-color: rgba(0, 0, 0, 0.8);
-  color: var(--orange-yellow-crayola);
+  color: #fff;
   padding: 5px 5px;
   border-radius: 12px;
   font-size: 11px;
@@ -2547,6 +2552,7 @@ textarea.form-input::-webkit-resizer {
     align-items: center;
     margin-top: 40px;
     margin-bottom: 30px;
+    overflow: hidden;
   }
 
   .image-photo-about img {
