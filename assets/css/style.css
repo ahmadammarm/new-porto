@@ -1786,11 +1786,11 @@ textarea.form-input::-webkit-resizer {
 }
 
 .form-btn:hover {
-  background: var(--bg-gradient-yellow-1);
+  /* background: var(--bg-gradient-yellow-1); */
 }
 
 .form-btn:hover::before {
-  background: var(--bg-gradient-yellow-2);
+  /* background: var(--bg-gradient-yellow-2); */
 }
 
 .form-btn:disabled {
