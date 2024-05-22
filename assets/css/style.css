@@ -1786,12 +1786,12 @@ textarea.form-input::-webkit-resizer {
 }
 
 .form-btn:hover {
-  /* background: var(--bg-gradient-yellow-1); */
+  transform: translateY(-5px);
 }
 
-.form-btn:hover::before {
-  /* background: var(--bg-gradient-yellow-2); */
-}
+/* .form-btn:hover::before {
+  transform: scale(1.1);
+} */
 
 .form-btn:disabled {
   opacity: 0.7;
