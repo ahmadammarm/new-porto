@@ -525,6 +525,10 @@ main {
   margin-bottom: 15px;
 }
 
+.image-photo-about {
+  display: none;
+}
+
 .about-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
@@ -1916,6 +1920,14 @@ textarea.form-input::-webkit-resizer {
     transform: scale(1.3);
   }
 
+  .image-photo-about img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 14px;
+  }
+
   .info-content .name {
     margin-bottom: 15px;
   }
@@ -2204,6 +2216,14 @@ textarea.form-input::-webkit-resizer {
 
   .modal-avatar-box img {
     width: 80px;
+  }
+
+  .image-photo-about img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 14px;
   }
 
   /**
@@ -2515,6 +2535,22 @@ textarea.form-input::-webkit-resizer {
 
   #skills-icon-title {
     margin-top: 5px;
+  }
+
+  .avatar-box img {
+    display: none;
+  }
+
+  .image-photo-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .image-photo-about img {
+    border-radius: 14px;
   }
 
   .skill-category .skill-category-title .h4 {
