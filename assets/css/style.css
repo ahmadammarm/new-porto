@@ -1786,7 +1786,7 @@ textarea.form-input::-webkit-resizer {
 }
 
 .form-btn:hover {
-  transform: translateY(-5px);
+  background: var(--bg-gradient-onyx);
 }
 
 /* .form-btn:hover::before {
@@ -2631,7 +2631,7 @@ textarea.form-input::-webkit-resizer {
     font-size: 14px;
   }
   .download-cv button:hover {
-    background: var(--eerie-black-1);
+    background: var(--bg-gradient-onyx);
   }
   .spotify-section .spotify-listening {
     width: 100%;
