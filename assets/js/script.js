@@ -198,7 +198,7 @@ function showCategory(categoryId) {
 
 
 // Initial filter for web development and set the initial styling
-filterFunc("web development");
+filterFunc("independent");
 setActiveFilterBtn(document.querySelector("[data-filter-btn].selected"));
 
 // add event in all filter button items for large screen
