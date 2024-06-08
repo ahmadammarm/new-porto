@@ -2557,6 +2557,7 @@ textarea.form-input::-webkit-resizer {
 
   .image-photo-about img {
     border-radius: 14px;
+    box-shadow: var(--shadow-1);
   }
 
   .skill-category .skill-category-title .h4 {
