@@ -346,9 +346,9 @@ main {
   border-radius: 20px;
 }
 
-.avatar-box img {
+/* .avatar-box img {
   border-radius: inherit;
-}
+} */
 
 .info-content .name {
   color: var(--white-2);
