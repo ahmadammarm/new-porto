@@ -2605,8 +2605,8 @@ textarea.form-input::-webkit-resizer {
     align-items: center;
     top: 50%;
     left: 50%;
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     transform: translateY(-100%);
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
