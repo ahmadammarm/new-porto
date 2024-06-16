@@ -1231,7 +1231,7 @@ main {
  * skills 
  */
 
-.skill-header {
+ .skill-header {
   display: flex;
   margin-bottom: 20px;
 }
@@ -1243,17 +1243,28 @@ main {
   margin-bottom: 25px;
 }
 
-.skill-category .skill-category-title .h4 {
+.skill-category-title h4 {
+  color: var(--light-gray);
+  font-size: var(--fs-5);
+  font-weight: var(--fw-300);
   cursor: pointer;
   transition: all 0.3s ease;
-  font-weight: 600;
-  background: var(--border-gradient-onyx);
   padding: 10px 15px;
   border-radius: 14px;
+  background: var(--onyx);
+  box-shadow: var(--shadow-2);
+  border: 1px solid var(--blue-cyan-crayola);
+  z-index: 1;
+  position: relative;
 }
 
-.skill-category-title .h4:hover {
+.skill-category-title h4:hover {
   color: var(--blue-cyan-crayola);
+}
+
+.skill-category-title.active h4 {
+  background: var(--blue-cyan-crayola);
+  color: var(--onyx);
 }
 
 .skills-list {
@@ -1268,10 +1279,6 @@ main {
   align-items: center;
   margin-bottom: 15px;
   position: relative;
-}
-
-.skill-category-title.active {
-  color: var(--blue-cyan-crayola);
 }
 
 .skills-title {
@@ -1367,6 +1374,7 @@ main {
   z-index: 1;
   text-align: center;
 }
+
 
 .edu-title, .skills-title, .experiences-title{
   background: var(--bg-gradient-onyx);
@@ -2560,12 +2568,18 @@ textarea.form-input::-webkit-resizer {
     box-shadow: var(--shadow-1);
   }
 
-  .skill-category .skill-category-title .h4 {
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .skill-category {
+    flex-wrap: wrap;
+    gap: 10px; /* Reduce gap between categories */
+    margin-bottom: 15px; /* Reduce bottom margin */
   }
+
+  .skill-category-title h4 {
+    font-size: 14px; /* Decrease font size for category titles */
+    padding: 8px 12px; /* Adjust padding for smaller size */
+    border-radius: 10px; /* Smaller border radius */
+  }
+
   .skills-images {
     width: 60px;
     height: 60px;

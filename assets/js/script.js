@@ -315,3 +315,18 @@ document.getElementById("downloadButton").addEventListener("click", function() {
   link.click();
   document.body.removeChild(link);
 });
+
+document.querySelectorAll('.skill-category-title').forEach(category => {
+  category.addEventListener('click', () => {
+    document.querySelectorAll('.skill-category-title').forEach(item => item.classList.remove('active'));
+    category.classList.add('active');
+
+    const categoryValue = category.getAttribute('data-category');
+    document.querySelectorAll('.skills-list').forEach(list => {
+      list.style.display = list.getAttribute('data-category') === categoryValue ? 'flex' : 'none';
+    });
+  });
+});
+
+// Initially show the frontend skills
+document.querySelector('.skill-category-title.active').click();
