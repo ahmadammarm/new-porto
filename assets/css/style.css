@@ -1231,7 +1231,26 @@ main {
  * skills 
  */
 
- .skill-header {
+ .skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 15px; /* Adjust the gap between items as needed */
+}
+
+.skills-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(25% - 15px); /* 25% width minus the gap to make 4 items per row */
+  margin-bottom: 15px;
+  position: relative;
+}
+
+/* Other existing CSS styles can remain unchanged */
+.skill-header {
   display: flex;
   margin-bottom: 20px;
 }
@@ -1269,15 +1288,19 @@ main {
 }
 
 .skills-list {
-  display: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
   list-style: none;
   transition: all 0.3s ease;
 }
 
 .skills-item {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  width: calc(25% - 15px); /* Ensures 4 items per row with space between */
   margin-bottom: 15px;
   position: relative;
 }
@@ -1286,12 +1309,6 @@ main {
   margin-bottom: 20px;
   margin-top: 5px;
   margin-left: 15px;
-}
-
-.skills-list {
-  display: flex;
-  justify-content: space-around;
-  padding: 0;
 }
 
 .skills-item:not(:last-child) {
@@ -1362,6 +1379,7 @@ main {
   z-index: 1;
   text-align: center;
 }
+
 
 
 .edu-title, .skills-title, .experiences-title{
