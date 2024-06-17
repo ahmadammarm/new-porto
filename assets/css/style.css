@@ -1266,7 +1266,7 @@ main {
 .skill-category-title h4 {
   color: var(--light-gray);
   font-size: var(--fs-5);
-  font-weight: var(--fw-300);
+  font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease;
   padding: 10px 15px;
