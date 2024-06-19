@@ -1385,7 +1385,7 @@ main {
 
 .skill-level {
   position: absolute;
-  bottom: -20px;
+  bottom: -13px;
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--bg-gradient-jet);
