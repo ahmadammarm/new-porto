@@ -2647,6 +2647,7 @@ textarea.form-input::-webkit-resizer {
 
   .skill-level {
     font-size: 12px;
+    bottom: -10px;
   }
 
   .timeline-title,
