@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
   --bg-gradient-onyx: linear-gradient(
@@ -54,7 +54,7 @@
    */
 
   /* font-family */
-  --ff-poppins: "Poppins", sans-serif;
+  --ff-poppins: 'Poppins', sans-serif;
 
   /* font-size */
   --fs-1: 24px;
@@ -198,7 +198,7 @@ article {
 }
 
 .icon-box::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 1px;
   background: var(--eerie-black-1);
@@ -259,7 +259,7 @@ article.active {
 }
 
 .article-title::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -300,7 +300,7 @@ article.active {
 }
 
 .content-card::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 1px;
   background: var(--bg-gradient-jet);
@@ -356,7 +356,7 @@ main {
   font-weight: var(--fw-500);
   letter-spacing: -0.25px;
   margin-bottom: 10px;
-  font-family: "Clicker Script", cursive;
+  font-family: 'Clicker Script', cursive;
 }
 
 .info-content .title {
@@ -387,7 +387,7 @@ main {
 }
 
 .info_more-btn::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 1px;
   border-radius: inherit;
@@ -584,8 +584,6 @@ main {
   width: 40%;
 }
 
-
-
 /**
  * #service 
  */
@@ -615,7 +613,7 @@ main {
 }
 
 .service-item::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 1px;
   background: var(--bg-gradient-jet);
@@ -651,8 +649,6 @@ main {
   line-height: 1.6;
   text-align: center;
 }
-
-
 
 /**
  * #testimonials 
@@ -1069,7 +1065,6 @@ main {
   padding-bottom: 25px;
 }
 
-
 .timeline-item:not(:last-child) {
   margin-bottom: 20px;
 }
@@ -1119,7 +1114,7 @@ main {
 }
 
 .timeline-item:not(:last-child)::before {
-  content: "";
+  content: '';
   position: absolute;
   top: -25px;
   left: -30px;
@@ -1129,7 +1124,7 @@ main {
 }
 
 .timeline-item::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 5px;
   left: -33px;
@@ -1164,7 +1159,6 @@ main {
   transition: all 0.3s ease;
 }
 
-
 .experiences-avatar-box {
   position: absolute;
   top: 0;
@@ -1176,7 +1170,7 @@ main {
   display: flex;
   flex-direction: row;
   padding: 10px;
-  border: 1px solid var(--blue-cyan-crayola)
+  border: 1px solid var(--blue-cyan-crayola);
 }
 
 .experiences-avatar-box img {
@@ -1225,13 +1219,11 @@ main {
   overflow: hidden;
 }
 
-
-
 /**
  * skills 
  */
 
- .skills-list {
+.skills-list {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -1300,10 +1292,21 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: calc(25% - 15px); /* Ensures 4 items per row with space between */
+  width: calc(25% - 15px);
   margin-bottom: 15px;
   position: relative;
 }
+
+/* #item-1,
+#item-2,
+#item-3,
+#item-4,
+#item-8,
+#item-9,
+#item-10,
+#item-11 {
+  margin-bottom: 5rem;
+} */
 
 .skills-title {
   margin-bottom: 20px;
@@ -1380,17 +1383,29 @@ main {
   text-align: center;
 }
 
+.skill-level {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--bg-gradient-jet);
+  color: var(--blue-cyan-crayola);
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 15px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 1;
+}
 
-
-.edu-title, .skills-title, .experiences-title{
+.edu-title,
+.skills-title,
+.experiences-title {
   background: var(--bg-gradient-onyx);
   padding: 10px 15px;
   border-radius: 14px;
   color: var(--vegas-cyan);
 }
-
-
-
 
 /*-----------------------------------*\
   #PORTFOLIO
@@ -1427,7 +1442,6 @@ main {
 .select-list button.selected {
   color: var(--blue-cyan-crayola);
 }
-
 
 .select-list {
   background: var(--eerie-black-2);
@@ -1504,7 +1518,7 @@ main {
 }
 
 .project-img::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -1580,7 +1594,6 @@ main {
   font-weight: var(--fw-300);
 }
 
-
 .link-github {
   display: flex;
   margin-top: 5px;
@@ -1625,7 +1638,7 @@ main {
 }
 
 .blog-post-item > a::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 1px;
   border-radius: inherit;
@@ -1786,7 +1799,7 @@ textarea.form-input::-webkit-resizer {
 }
 
 .form-btn::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 1px;
   background: var(--bg-gradient-jet);
@@ -2580,8 +2593,24 @@ textarea.form-input::-webkit-resizer {
     margin-bottom: 15px;
   }
 
+  .skills-item {
+    width: calc(33.33% - 15px); 
+  }
+
+  /* #item-4,
+  #item-1,
+  #item-2,
+  #item-3,
+  #item-4,
+  #item-8,
+  #item-9,
+  #item-10,
+  #item-11 {
+    margin-bottom: 4rem;
+  } */
+
   .skill-category-title h4 {
-    font-size: 14px; 
+    font-size: 14px;
     padding: 8px 12px;
     border-radius: 10px;
     margin-left: 0px;
@@ -2596,7 +2625,6 @@ textarea.form-input::-webkit-resizer {
     width: 60px;
     height: 60px;
   }
-  
 
   .skills-images:hover::after {
     content: attr(data-text);
@@ -2616,7 +2644,13 @@ textarea.form-input::-webkit-resizer {
     z-index: 1;
     text-align: center;
   }
-  .timeline-title, .timeline-item-title {
+
+  .skill-level {
+    font-size: 12px;
+  }
+
+  .timeline-title,
+  .timeline-item-title {
     font-size: 16px;
   }
   .timeline-list span {
@@ -2643,7 +2677,9 @@ textarea.form-input::-webkit-resizer {
     min-width: 100%;
     scroll-snap-align: center;
   }
-  .edu-title, .skills-title, .experiences-title{
+  .edu-title,
+  .skills-title,
+  .experiences-title {
     font-size: 20px;
     background: var(--bg-gradient-onyx);
     padding: 10px 15px;
